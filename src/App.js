@@ -1,24 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from 'react'
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
+import Aos from 'aos'
+import "aos/dist/aos.css"
+import SectionHero from './sections/SectionHero'
+import SectionLockup from './sections/SectionLockup'
+import SectionOverflow from './sections/SectionOverflow'
+import BlockQuotes from './components/BlockQuotes'
+import GridGallerySection from './sections/GridGallerySection'
+import SlideShow from './components/SlideShow'
+import SectionProject from './sections/SectionProject'
+import Form from './sections/Form'
+import Footer from './sections/Footer'
+
+import { chiSiamo, mission, slideShow, project, projectArray, gallery } from './assets/data'
 
 function App() {
+
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  },[])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <article>
+        <SectionHero />
+        <SectionLockup
+          h1={chiSiamo.h1}
+          h2={chiSiamo.h2}
+          p={chiSiamo.p()}
+        />
+        <SectionOverflow />
+        <BlockQuotes />
+        <GridGallerySection
+          gallery={gallery}
+        />
+        <SectionLockup
+          h2={mission.h2}
+          p={mission.p()}
+        />
+        <SlideShow
+          gallery={slideShow}
+        />
+        <SectionLockup
+          white
+          h2={project.h2}
+          p={project.p()}
+        />
+        <SectionProject
+          project={projectArray}
+        />
+        <SectionLockup
+          white
+          p={project.p2()}
+        />
+        <Form />
+        <Footer />
+      </article>
+    </Router>
   );
 }
 

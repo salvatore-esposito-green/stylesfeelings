@@ -1,0 +1,21 @@
+.lockup 
+    padding-top: 7.5vw
+    padding-bottom: 7.5vw
+    padding-left: 5vw
+    padding-right: 5vw
+    opacity: 0
+    transform: translate3d(0,2vw,0)
+    transition: transform 800ms cubic-bezier(.215,.61,.355,1),opacity 330ms cubic-bezier(.694,0,.335,1),-webkit-transform 800ms cubic-bezier(.215,.61,.355,1)
+    &:first-child 
+        margin-top: 0
+    &:last-child
+        margin-bottom: 0
+
+.lockup[data-in-view]
+    opacity: 1
+    transform: translate3d(0,0,0)    
+
+.white
+    background-color: white
+    h1, h2, p 
+        color: black
