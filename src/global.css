@@ -62,6 +62,32 @@ img {
     padding: 0 5vw;
 }
 
+p i {
+    position: relative;
+    transition: all 330ms cubic-bezier(.694,0,.335,1);
+    cursor: pointer;
+}
+p i:hover {
+    color: black;
+    padding: 0 4px;
+}
+
+p i::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: yellow;
+    bottom: 0;
+    width: 0%;
+    z-index: -1;
+    transition: all 330ms cubic-bezier(.694,0,.335,1);
+}
+
+p i:hover::before {
+    width: 100%;
+}
+
 
 @media (min-width: 500px) {
     h2 {

@@ -30,6 +30,7 @@ function App() {
           h1={chiSiamo.h1}
           h2={chiSiamo.h2}
           p={chiSiamo.p()}
+          p2={chiSiamo.p2()}
         />
         <SectionOverflow />
         <BlockQuotes />

@@ -136,32 +136,35 @@ import slidehero_6 from '../../assets/images/slidehero/6.jpg'
 /* ------------------------------------ */
 export const chiSiamo = {
   h1: 'STYLES & FEELINGS',
-  h2: 'Gli "stili e i sentimenti" sono ciò che ci appartengono.',
+  h2: 'Gli stili e i sentimenti ci appartengono: sono le impronte della nostra personalità. ',
   p: () => { 
     return (
       <>
-        Sono le nostre impronte peculiari della nostra personalità.<br/>
-        Attraverso i nostri progetti di Interiors design diamo vita alle diversità e alle emozioni dei nostri clienti caratterizzando le nostre proposte alle loro esigenze e ai loro stili.<br/>
-        È l"essere "diverso" che ci contraddistingue e ci riconosce allo stesso tempo, ognuno nel suo "stile".<br/><br/>
-        Perché sono proprio le nostre differenti caratteristiche ed esperienze come nostro bagaglio culturale ed emozionale che si traduce in mezzi espressivi e realizzativi di ogni nostra proposta. <br/><br/>
-        I nostri "Styles & Feelings" nascono dalla voglia di sviluppare e dare luce a queste differenze e a queste emozioni perché" ogni cliente è per noi unico: un nuovo mondo da esplorare e da comunicare con i nostri progetti.
+       Con nostri progetti di <i>Interiors Design</i> diamo vita alle emozioni che si trasformano in stile unico e differente: perché’ ogni stile è intriso di emozioni, proprie di ogni singolo cliente. <br /><br />
+      </> 
+    )
+  },
+  p2: () => { 
+    return (
+      <>
+       Trasformiamo il nostro bagaglio culturale ed emozionale in mezzi espressivi di design e realizziamo i nostri progetti di <br/><i>Decor & Design</i> in modo unico e personalizzato per i nostri clienti.
       </> 
     )
   }
 }
 
 export const mission = {
-  h2: 'Diamo spazio alle emozioni e ai sentimenti rispettando i differenti stili.',
+  h2: () => { 
+    return (
+      <>Con i nostri progetti <i>Styles & Feelings</i> diamo vita agli stili e alle emozioni di ogni nostro cliente in modo unico e personalizzato.</>
+    )},
   p: () => { 
     return (
       <>
-        SI ‘Feelings’ dei nostri clienti sono la base fondamentale per iniziare il nostro lavoro per loro.<br />
-        Ed è così che ogni progetto è differente e unico: proprio perché’ rispettiamo e diamo luce alle peculiarità e allo stile dei nostri clienti.<br /><br />
+        Diamo spazio alle emozioni e ai sentimenti rispettando i differenti stili perché’ i <i>‘Feelings’</i> dei nostri clienti sono la base fondamentale per iniziare il nostro lavoro per loro.<br/><br/>
 
-        Il nostro mantra: IL MONDO E’ BELLO PERCHE’ E’ VARIO!<br /><br />
-
-        E così lo sono anche i nostri progetti di Interior design che ci vedono coinvolti nella scoperta e nella ricerca di ogni piccolo dettaglio perché’ sono proprio i dettagli a fare la differenza. 
-      </> 
+Ed è così che ogni progetto è differente e unico: proprio perché rispettiamo e diamo importanza alle peculiarità e allo <i>Stile</i> dei nostri clienti proponendo progetti di interior design che li rispecchiano. 
+</> 
     )
   }
 }
@@ -178,7 +181,8 @@ export const project = {
   p2: () => { 
     return (
       <>       
-        La progettazione delle nostre proposte nasce dallo studio del <i>concept</i> che il cliente vuole trasmettere: la definizione degli elementi fondamentali di ogni progetto. <br/><br/>Lo scopo principale è di fornire le soluzioni eleganti e raffinate ma innovative e rispettose delle emozioni che si vuole trasmettere. La nostra esperienza internazionale ci contraddistingue in ogni nostro progetto.
+La progettazione delle nostre proposte nasce dallo studio del <i>concept</i> che il cliente vuole trasmettere: la definizione degli elementi fondamentali di ogni progetto. Lo scopo principale è di fornire le soluzioni eleganti e raffinate ma innovative e rispettose delle emozioni che si vuole trasmettere. <br/>
+La nostra esperienza internazionale ci contraddistingue in ogni nostri progetto.
       </> 
     )
   }
