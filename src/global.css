@@ -45,6 +45,32 @@ h2 {
     line-height: 1;
 }
 
+h2 span {
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent;
+    /* background-image: url('/src/assets/images/gold_bg.jpg'); */
+    background-image: linear-gradient(to right, white, white,white, #fec401,#ffd974,#c99000,#dca317, #c99000,#ffd974, #fec401, white, white, white );
+    background-size: 580%;
+    background-position: 0%;
+}
+
+
+h2.aos-animate span{ 
+    animation: rameAnimation 4s infinite 2s alternate-reverse;
+    animation-timing-function: ease-in-out;
+} 
+
+@keyframes rameAnimation {
+    from   {
+        background-position: 0%;  
+    }
+    to  {
+        background-position: 100%;  
+    }
+}
+
 p {
     margin-top: 1rem;
     margin-bottom: 1rem;

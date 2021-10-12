@@ -28,7 +28,7 @@ function App() {
         <SectionHero />
         <SectionLockup
           h1={chiSiamo.h1}
-          h2={chiSiamo.h2}
+          h2={chiSiamo.h2()}
           p={chiSiamo.p()}
           p2={chiSiamo.p2()}
         />
@@ -38,7 +38,7 @@ function App() {
           gallery={gallery}
         />
         <SectionLockup
-          h2={mission.h2}
+          h2={mission.h2()}
           p={mission.p()}
         />
         <SlideShow
@@ -46,7 +46,7 @@ function App() {
         />
         <SectionLockup
           white
-          h2={project.h2}
+          h2={project.h2()}
           p={project.p()}
         />
         <SectionProject

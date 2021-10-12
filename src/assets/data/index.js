@@ -136,18 +136,20 @@ import slidehero_6 from '../../assets/images/slidehero/6.jpg'
 /* ------------------------------------ */
 export const chiSiamo = {
   h1: 'STYLES & FEELINGS',
-  h2: 'Gli stili e i sentimenti ci appartengono: sono le impronte della nostra personalità. ',
+  h2: () => <><span>Gli stili e i sentimenti ci appartengono</span>: sono le impronte della nostra personalità.</>,
   p: () => { 
     return (
       <>
-       Con nostri progetti di <i>Interiors Design</i> diamo vita alle emozioni che si trasformano in stile unico e differente: perché’ ogni stile è intriso di emozioni, proprie di ogni singolo cliente. <br /><br />
+        Attraverso i nostri progetti di <i>Interiors Design</i> diamo vita alle esigenze e agli stili dei nostri clienti proponendo e realizzando progetti di architettura, design con progettazione stilistica e decorativa su misura di ogni spazio interno ed esterno, definendo l’ideazione del concept che si vuole comunicare, costruendo e progettando lo stile e il logo personalizzato a cui l’ambiente va designato.
+        
       </> 
     )
   },
   p2: () => { 
     return (
       <>
-       Trasformiamo il nostro bagaglio culturale ed emozionale in mezzi espressivi di design e realizziamo i nostri progetti di <br/><i>Decor & Design</i> in modo unico e personalizzato per i nostri clienti.
+       Il design definisce il <i>concept e l’identità</i> che dovrà conferire alla struttura la propria dimensione e soprattutto la propria unicità.<br /><br />
+
       </> 
     )
   }
@@ -156,21 +158,23 @@ export const chiSiamo = {
 export const mission = {
   h2: () => { 
     return (
-      <>Con i nostri progetti <i>Styles & Feelings</i> diamo vita agli stili e alle emozioni di ogni nostro cliente in modo unico e personalizzato.</>
+      <>
+        <span>Diamo vita agli stili e alle emozioni</span> di ogni nostro cliente in modo unico e personalizzato.     
+      </>
     )},
   p: () => { 
     return (
       <>
-        Diamo spazio alle emozioni e ai sentimenti rispettando i differenti stili perché’ i <i>‘Feelings’</i> dei nostri clienti sono la base fondamentale per iniziare il nostro lavoro per loro.<br/><br/>
-
-Ed è così che ogni progetto è differente e unico: proprio perché rispettiamo e diamo importanza alle peculiarità e allo <i>Stile</i> dei nostri clienti proponendo progetti di interior design che li rispecchiano. 
+        Tale unicità dovrà emergere chiaramente da tutto ciò che concorre a definire il progetto stesso: dalla realizzazione delle opere di ristrutturazione e di ambientazione degli spazi, a quelli di illuminazione, alla definizione dell’arredamento e del brand name e di ogni immagine e logo coordinato.<br/>  
+        Diamo spazio alle emozioni e ai sentimenti rispettando i differenti stili perché’ i <i>‘Feelings’</i> dei nostri clienti sono la base fondamentale per iniziare il nostro lavoro.<br/><br/>
+        Gli stili e i sentimenti sono ciò che contraddistinguono i nostri progetti come veri e propri segni distintivi del nostro design. 
 </> 
     )
   }
 }
 
 export const project = {
-  h2: 'Ogni nostro progetto è inteso ed è concepito partendo dall’analisi delle emozioni e delle passioni dei nostri clienti.',
+  h2: () => <><span>Ogni nostro progetto è inteso</span> ed è concepito partendo dall’analisi delle emozioni e delle passioni dei nostri clienti.</>,
   p: () => { 
     return (
       <>
@@ -181,8 +185,8 @@ export const project = {
   p2: () => { 
     return (
       <>       
-La progettazione delle nostre proposte nasce dallo studio del <i>concept</i> che il cliente vuole trasmettere: la definizione degli elementi fondamentali di ogni progetto. Lo scopo principale è di fornire le soluzioni eleganti e raffinate ma innovative e rispettose delle emozioni che si vuole trasmettere. <br/>
-La nostra esperienza internazionale ci contraddistingue in ogni nostri progetto.
+La progettazione delle nostre proposte nasce dallo studio del <i>concept</i> che il cliente vuole trasmettere: la definizione degli elementi fondamentali di ogni progetto. <br /><br />Lo scopo principale è di fornire le soluzioni <i>eleganti e raffinate</i> ma innovative e rispettose delle emozioni che si vuole trasmettere. <br/><br />
+La nostra esperienza internazionale ci contraddistingue in ogni nostro progetto.
       </> 
     )
   }
