@@ -4,10 +4,11 @@ export default function SectionMission({
     h2,
     p,
     p2,
-    white
+    white,
+    style
 }) {
     return (
-        <div className={`${css.lockup} ${white && css.white}`} data-in-view="true">
+        <div className={`${css.lockup} ${white && css.white}`} data-in-view="true" style={style}>
             {h1 && <h1 data-aos="fade-up">{h1}</h1>}
             {h2 && <h2 data-aos="fade-up">{h2}</h2>}
             {p && <p data-aos="fade-up">{p}</p>}

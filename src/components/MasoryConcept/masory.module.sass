@@ -1,0 +1,63 @@
+.masonry_grid
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    margin-left: -8px
+    width: auto
+    align-items: flex-start
+    @media (max-width: 800px)
+        margin-left: -4px
+
+.masonry_grid_column 
+    padding-left: 8px
+    background-clip: padding-box
+    align-items: center
+    @media (max-width: 800px)
+        padding-left: 4px
+    & > a 
+        margin-bottom: 8px
+        display: block
+        @media (max-width: 800px)
+            margin-bottom: 4px
+
+.containerConceptBox
+    display: flex 
+    align-content: center 
+    padding-bottom: 1vw
+    padding-left: 5vw
+    padding-right: 5vw    
+    background-color: #eeeeee
+    @media (max-width: 800px) 
+        flex-direction: column
+    .left 
+        justify-content: flex-start
+        padding-right: 8px
+        @media (max-width: 800px) 
+            justify-content: center
+            padding-right: 0
+        h3, p 
+            color: black
+        p 
+            font-style: italic
+            display: none
+            padding-right: 2rem
+    .right 
+        justify-content: flex-end
+        width: 50%
+        display: none
+        @media (max-width: 800px) 
+            justify-content: center
+            width: 100%
+
+.collapse
+    .left 
+        p 
+            display: block
+    .right 
+        display: block
+
+
+.containerConceptBox:last-of-type
+        .left 
+            h3 
+                padding-bottom: 2rem

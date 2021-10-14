@@ -8,6 +8,7 @@ export default function Footer() {
             </div>
 
             <a href="https://www.stylesfeelings.com/" className={css.site_web}>www.stylesfeelings.com</a>
+            <a className={css.copyright}>Styles & Feelings Srl Unipersonale</a>
         </section>
     )
 }

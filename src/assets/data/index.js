@@ -129,6 +129,32 @@ import slidehero_4 from '../../assets/images/slidehero/4.jpg'
 import slidehero_5 from '../../assets/images/slidehero/5.jpg'
 import slidehero_6 from '../../assets/images/slidehero/6.jpg'
 
+import apollo_1 from '../../assets/images/concept/apollo_1.jpg'
+import apollo_2 from '../../assets/images/concept/apollo_2.jpg'
+import apollo_3 from '../../assets/images/concept/apollo_3.jpg'
+import apollo_4 from '../../assets/images/concept/apollo_4.jpg'
+import cool_1 from '../../assets/images/concept/cool_1.jpg'
+import cool_2 from '../../assets/images/concept/cool_2.jpg'
+import cool_3 from '../../assets/images/concept/cool_3.jpg'
+import cool_4 from '../../assets/images/concept/cool_4.jpg'
+import igloo_1 from '../../assets/images/concept/igloo_1.jpg'
+import igloo_2 from '../../assets/images/concept/igloo_2.jpg'
+import igloo_3 from '../../assets/images/concept/igloo_3.jpg'
+import igloo_4 from '../../assets/images/concept/igloo_4.jpg'
+import jungle_1 from '../../assets/images/concept/jungle_1.jpg'
+import jungle_2 from '../../assets/images/concept/jungle_2.jpg'
+import jungle_3 from '../../assets/images/concept/jungle_3.jpg'
+import notting_1 from '../../assets/images/concept/notting_1.jpg'
+import notting_2 from '../../assets/images/concept/notting_2.jpg'
+import notting_3 from '../../assets/images/concept/notting_3.jpg'
+import notting_4 from '../../assets/images/concept/notting_4.jpg'
+import notting_5 from '../../assets/images/concept/notting_5.jpg'
+import secret_1 from '../../assets/images/concept/secret_1.jpg'
+import secret_2 from '../../assets/images/concept/secret_2.jpg'
+import secret_3 from '../../assets/images/concept/secret_3.jpg'
+import secret_4 from '../../assets/images/concept/secret_4.jpg'
+import secret_5 from '../../assets/images/concept/secret_5.jpg'
+
 
 
 /* ------------------------------------ */
@@ -191,6 +217,170 @@ La nostra esperienza internazionale ci contraddistingue in ogni nostro progetto.
     )
   }
 }
+
+export const conceptText = {
+  h2: () => <><span>Ogni ambiente nasce con un concept</span> che costruiamo insieme allo stile e alle necessità dei nostri clienti.</>,
+  p: () => { 
+    return (
+      <>
+        I concept esprimono il ruolo che quell’ambiente deve assumere per poter emozionare e tramettere il suo <i>‘significato’</i> nel suo stile.
+      </> 
+    )
+  }
+}
+
+export const conceptTextArray = [
+  {
+    id: 'secret',
+    title: 'Secret Garden',
+    p: () => {
+      return (<>
+        Nel giardino segreto di Qvinto ogni cosa ti parlerà d'#amore.
+        <br/><br/>
+        Il #SecretGarden è la splendida location avvolta da una suggestiva cascata di fiori, dove poter gustare una una romantica cena di coppia o un'intima cena tra amici. Momenti 'intimi' da condividere con champagne, rose rosse e tanto amore.
+      </> )
+    },
+    gallery: [
+      {
+        src: secret_1
+      },
+      {
+        src: secret_2
+      },
+      {
+        src: secret_3
+      },
+      {
+        src: secret_4
+      },
+      {
+        src: secret_5
+      },
+    ]
+  },
+  {
+    id: 'notting',
+    title: 'Notting Hill',
+    p: () => {
+      return (<>        
+        "Can i stay for a while? You can stay forever."<br/><br/>
+        Un angolo di un magico guardino di Londra a Roma... a una porta da te.<br/>
+        Il nuovo dehor esterno di #Qvinto, in perfetto British Style, dove gustare tutte le prelibatezze degli Chef e i drink firmati dai bartender. Il #NottingHillGarden ti avvolgere grazie alla sua sugestiva bellezza e romanticismo.
+      </> )
+    },
+    gallery: [      
+      {
+        src: notting_1
+      },
+      {
+        src: notting_2
+      },
+      {
+        src: notting_3
+      },
+      {
+        src: notting_4
+      },
+      {
+        src: notting_5
+      },
+    ]
+  },
+  {
+    id: 'apollo',
+    title: 'Apollo & The Roof',
+    p: () => {
+      return (<>       
+       Vivi la tua esperienza spaziale. Allaccia le cinture e preparati al decollo.<br/><br/>
+        Un viaggio verso la tua #ExclusiveSpaceExperience sta per iniziare.
+      </> )
+    },
+    gallery: [
+      {
+        src: apollo_1
+      },
+      {
+        src: apollo_2
+      },
+      {
+        src: apollo_3
+      },
+      {
+        src: apollo_4
+      },
+    ]
+  },
+  {
+    id: 'jungle',
+    title: 'Jungle Garden',
+    p: () => {
+      return (<>
+       Il giardino di Qvinto sta per fiorire e diventare un bellissimo paradiso tropicale.<br/><br/>
+        Privè unici per un'esperienza ancora più different. Uno speciale angolo di 'giungla' pensato per la notte magica di Qvinto Restaurant. Un'esperienza intima, riservata e immersa nel verde.
+      </> )
+    },
+    gallery: [      
+    {
+      src: jungle_1
+    },
+    {
+      src: jungle_2
+    },
+    {
+      src: jungle_3
+    },
+    ]
+  },
+  {
+    id: 'cool',
+    title: 'Cool Garden',
+    p: () => {
+      return (<>
+       Comodità, eleganza e bellezza 100% naturale.<br/><br/>
+       Un vero e proprio Eden dove gustare i drink dei bartender, godersi un aperitivo o un after dinner al fresco del Parco di Tor di Quinto. Una location sempre fiorita.<br/>
+       Il giardino estivo più 'cool' di sempre dove vivere food experience di altissimo livello.
+      </> )
+    },
+    gallery: [
+      {
+        src: cool_1
+      },
+      {
+        src: cool_2
+      },
+      {
+        src: cool_3
+      },
+      {
+        src: cool_4
+      },
+    ]
+  },
+  {
+    id: 'igloo',
+    title: 'Igloo Garden',
+    p: () => {
+      return (<>
+      Come se foste in una baita a più di 2000 metri, gli Igloo sono la location 'calda' e ideale per vivere l'inverno nella Capitale.<br/><br/>
+      Eleganti e confortevoli, gli Igloo sono la cornice ideale dove gustare light lunch, aperitivi gourmet e sorseggiare il vero English Royal Tea.
+      </> )
+    },
+    gallery: [      
+    {
+      src: igloo_1
+    },
+    {
+      src: igloo_2
+    },
+    {
+      src: igloo_3
+    },
+    {
+      src: igloo_4
+    },
+    ]
+  }
+]
 
 export const projectArray = [
   {

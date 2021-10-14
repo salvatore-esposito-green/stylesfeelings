@@ -5,11 +5,13 @@ import {
     useLocation
   } from "react-router-dom";
 import css from './project.module.sass'
+import MasoryConcept from '../../components/MasoryConcept';
 import MasoryProject from '../../components/MasoryProject';
+import SectionLockup from '../SectionLockup'
+import { conceptText } from "../../assets/data";
 
 import { 
     interior,
-    concept,
     decor,
     design,
     corner
@@ -30,7 +32,13 @@ export default function SectionProject({
                     <MasoryProject data={interior} />
                 </Route>
                 <Route path="/concept">
-                    <MasoryProject data={concept} />
+                    <SectionLockup
+                        white
+                        h2={conceptText.h2()}
+                        p={conceptText.p()}
+                        style={{paddingBottom: '2.5vw', paddingTop: '2.5vw'}}
+                    />
+                    <MasoryConcept />
                 </Route>
                 <Route path="/decor">
                     <MasoryProject data={decor} />

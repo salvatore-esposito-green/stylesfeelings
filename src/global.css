@@ -30,7 +30,7 @@ h1 {
     line-height: 1;
 }
     
-h2 {
+h2, h3 {
     margin-top: 1rem;
     margin-bottom: 1rem;
     max-width: 12em;
@@ -45,22 +45,36 @@ h2 {
     line-height: 1;
 }
 
-h2 span {
+h3 {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+h2 span, h3 {
     -webkit-background-clip: text; 
     background-clip: text;
     -webkit-text-fill-color: transparent; 
     color: transparent;
-    /* background-image: url('/src/assets/images/gold_bg.jpg'); */
     background-image: linear-gradient(to right, white, white,white, #fec401,#ffd974,#c99000,#dca317, #c99000,#ffd974, #fec401, white, white, white );
     background-size: 580%;
     background-position: 0%;
 }
 
-
 h2.aos-animate span{ 
     animation: rameAnimation 4s infinite 2s alternate-reverse;
     animation-timing-function: ease-in-out;
 } 
+
+h3  {
+    margin-bottom: 0;
+    animation: rameAnimation 4s infinite 2s alternate-reverse;
+    animation-timing-function: ease-in-out;
+    background-image: linear-gradient(to right, black, black,black, #fec401,#ffd974,#c99000,#dca317, #c99000,#ffd974, #fec401, black, black, black );
+}
+
+h3:last-child {
+    margin-bottom: 1rem;
+}
 
 @keyframes rameAnimation {
     from   {
@@ -118,6 +132,9 @@ p i:hover::before {
 @media (min-width: 500px) {
     h2 {
         font-size: 3.2rem;
+    }
+    h3 {
+        font-size: 2.2rem;
     }
     p{
         line-height: 1.25em;
