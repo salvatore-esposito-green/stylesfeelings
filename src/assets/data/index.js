@@ -181,6 +181,25 @@ export const chiSiamo = {
   }
 }
 
+export const chiSiamoEn = {
+  h1: 'STYLES & FEELINGS',
+  h2: () => <><span>Styles and Feelings belong to us</span>: they are our fingerprints of our personality.</>,
+  p: () => { 
+    return (
+      <>
+Throughout our Interior Design projects, we bring our clients’ décor wishes and styles to life, proposing and realizing our architectural project. We design every single space with art decor by tailored made details reflecting at our client’s styles.         
+      </> 
+    )
+  },
+  p2: () => { 
+    return (
+      <>
+All ideas and concepts communicate a specific feeling: we define them with our clients, building up their proper styles and their personal feelings in every ambient and details. <br />
+Our Designs Decoration projects define the concept and the identity of our client, conferring a very sense of unicity and structure of a new dimension.</>     
+    )
+  }
+}
+
 export const mission = {
   h2: () => { 
     return (
@@ -195,6 +214,22 @@ export const mission = {
         Diamo spazio alle emozioni e ai sentimenti rispettando i differenti stili perché’ i <i>‘Feelings’</i> dei nostri clienti sono la base fondamentale per iniziare il nostro lavoro.<br/><br/>
         Gli stili e i sentimenti sono ciò che contraddistinguono i nostri progetti come veri e propri segni distintivi del nostro design. 
 </> 
+    )
+  }
+}
+
+export const missionEn = {
+  h2: () => { 
+    return (
+      <>
+        <span>We give life to new styles and feelings</span> such every different client is. <b>Everybody is unique.</b>     
+      </>
+    )},
+  p: () => { 
+    return (
+      <>
+        This unicity of our décor projects emerges from every single part and details: from the definition of the renovation of spaces to the new setting for them, from the attention of the lighting to the décor and furniture design, from the definition of a new brand to all dimensions and details that should be coordinated. 
+        </> 
     )
   }
 }
@@ -218,12 +253,41 @@ La nostra esperienza internazionale ci contraddistingue in ogni nostro progetto.
   }
 }
 
+export const projectEn = {
+  h2: () => <><span>Every design project is intended</span> and conceived starting from the analysis of our client’s emotions and passions. </>,
+  p: () => { 
+    return (
+      <>
+Our feelings are the expression our individuality and so they’re subjective to each different style we have.       </> 
+    )
+  },
+  p2: () => { 
+    return (
+      <>       
+The design of our projects comes from the study of the <i>concept</i> that every client wants to communicate with our décor. The concept is the fundamental element of our project.  <br /><br />The main scope is to offer <i>different and elegant</i> décor solutions but always innovative and reflecting the state of feelings and emotions that our clients would like to show up. <br/><br />
+Our international experience is remarkable in every project. 
+      </> 
+    )
+  }
+}
+
 export const conceptText = {
   h2: () => <><span>Ogni ambiente nasce con un concept</span> che costruiamo insieme allo stile e alle necessità dei nostri clienti.</>,
   p: () => { 
     return (
       <>
         I concept esprimono il ruolo che quell’ambiente deve assumere per poter emozionare e tramettere il suo <i>‘significato’</i> nel suo stile.
+      </> 
+    )
+  }
+}
+
+export const conceptTextEn = {
+  h2: () => <><span>Every space is born from a specific concept</span> that we define together with our clients and their styles and requirements. <b>We communicate this concept with our décor</b></>,
+  p: () => { 
+    return (
+      <>
+       Concepts speak up and define the role of every single space to make you feel the emotions and convey  “meaning” in every single style. 
       </> 
     )
   }
