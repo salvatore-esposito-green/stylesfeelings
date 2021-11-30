@@ -22,7 +22,7 @@ if(trim($name) == '') {
 } else if(!isEmail($email)) {
 	echo '<div class="error_message">Attenzione! Hai inserito un indirizzo e-mail non valido, riprova.</div>';
 	exit();
-}else if(trim($phone) == '') {
+} else if(trim($phone) == '') {
 	echo '<div class="error_message">Attenzione! Si prega di inserire un numero di telefono valido.</div>';
 	exit();
 } else if(trim($comments) == '') {
@@ -34,8 +34,7 @@ if(get_magic_quotes_gpc()) {
 	$comments = stripslashes($comments);
 }
 
-//$address = "info@stylesfeelings.com";
-$address = "s.esposito@greennetwork.it";
+$address = "info@stylesfeelings.com";
 $e_subject = 'Styles & Feelings | Sei stato contattato da ' . $name . '.';
 
 $e_body = "Sei stato contattato da $name, il suo messaggio è il seguente." . PHP_EOL . PHP_EOL;

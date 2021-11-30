@@ -8,8 +8,7 @@ export default function Form() {
         name: '',
         email: '',
         phone: '+39',
-        message: '',
-        control: 'jA35t8cG'
+        message: ''
     })
 
     const [Success, SetSuccess] = useState(false)
@@ -36,33 +35,19 @@ export default function Form() {
             validator.isMobilePhone(State.phone)
         ) {
 
-            async function postData(url = '', data = {}) {
-                // Default options are marked with *
-                const response = await fetch(url, {
-                    method: 'POST', // *GET, POST, PUT, DELETE, etc.
-                    mode: 'cors', // no-cors, *cors, same-origin
-                    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-                    credentials: 'same-origin', // include, *same-origin, omit
-                    headers: {
-                        'Content-Type': 'application/json'
-                        // 'Content-Type': 'application/x-www-form-urlencoded',
-                    },
-                    redirect: 'follow', // manual, *follow, error
-                    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-                    body: JSON.stringify(data) // body data type must match "Content-Type" header
-                });
-
-                return response.json();
-            };
+            let formData = new FormData();
+            formData.append('name', State.name);
+            formData.append('email', State.email);
+            formData.append('message', State.message);
+            formData.append('phone', State.phone);
 
             fetch(`${process.env.REACT_APP_API_BASE_URL}/contact.php`, {
                 method: 'POST',
-                body: JSON.stringify(State)
+                body: formData
             })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                SetSuccess(data);
+            .then(res =>  console.log(res))
+            .then(() => {
+                SetSuccess(true);
             });
         }
     }

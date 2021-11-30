@@ -4,7 +4,7 @@ const ftpDeploy = new FtpDeploy();
 
 const config = {
   user: '13602016@aruba.it',
-  password: 'CSvGkCgeVaH!87',
+  password: 'Telefono5!',
   host: 'ftp.stylesfeelings.com',
   port: 21,
   localRoot: `${__dirname}/`,
