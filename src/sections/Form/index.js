@@ -55,8 +55,7 @@ export default function Form() {
                 return response.json();
             };
 
-            //fetch('https://www.stylesfeelings.com/send.php', {
-            fetch('http://localhost/sf/styles-feelings/send.php', {
+            fetch(`${process.env.REACT_APP_API_BASE_URL}/contact.php`, {
                 method: 'POST',
                 body: JSON.stringify(State)
             })
