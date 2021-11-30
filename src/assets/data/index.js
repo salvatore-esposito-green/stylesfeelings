@@ -451,31 +451,31 @@ export const projectArray = [
     id: 1,
     src: project1,
     caption: 'Interior Design',
-    href: '/interior'
+    href: '/project/interior'
   },
   {
     id: 2,
     src: project2,
     caption: 'Concept',
-    href: '/concept'
+    href: '/project/concept'
   },
   {
     id: 3,
     src: project3,
     caption: 'Decor',
-    href: '/decor'
+    href: '/project/decor'
   },
   {
     id: 4,
     src: project4,
     caption: 'Logo Design',
-    href: '/design'
+    href: '/project/design'
   },
   {
     id: 5,
     src: project5,
     caption: 'Corner',
-    href: '/corner'
+    href: '/project/corner'
   },
 ]
 

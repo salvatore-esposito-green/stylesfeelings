@@ -30,11 +30,30 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <article>
-        <SectionHero />
+    <article>
+      <Router>
         <Switch>
-          <Route exact path="/">
+          <Route path={`/en`}>
+            <SectionHero />
+            <SectionLockup
+                h1={chiSiamoEn.h1}
+                h2={chiSiamoEn.h2()}
+                p={chiSiamoEn.p()}
+                p2={chiSiamoEn.p2()}
+              />
+              <SectionOverflow />
+              <BlockQuotes />
+              <GridGallerySection gallery={gallery} />
+              <SectionLockup h2={missionEn.h2()} p={missionEn.p()} />
+              <SlideShow gallery={slideShow} />
+              <SectionLockup white h2={projectEn.h2()} p={projectEn.p()} />
+              <SectionProject project={projectArray} />
+              <SectionLockup white p={projectEn.p2()} />
+              <Form />
+              <Footer />  
+          </Route>
+          <Route path={`/`}>
+            <SectionHero />
             <SectionLockup
               h1={chiSiamo.h1}
               h2={chiSiamo.h2()}
@@ -48,29 +67,13 @@ function App() {
             <SlideShow gallery={slideShow} />
             <SectionLockup white h2={project.h2()} p={project.p()} />
             <SectionProject project={projectArray} />
-            <SectionLockup white p={project.p2()} />
-          </Route>
-          <Route exact path="/en">
-            <SectionLockup
-              h1={chiSiamoEn.h1}
-              h2={chiSiamoEn.h2()}
-              p={chiSiamoEn.p()}
-              p2={chiSiamoEn.p2()}
-            />
-            <SectionOverflow />
-            <BlockQuotes />
-            <GridGallerySection gallery={gallery} />
-            <SectionLockup h2={missionEn.h2()} p={missionEn.p()} />
-            <SlideShow gallery={slideShow} />
-            <SectionLockup white h2={projectEn.h2()} p={projectEn.p()} />
-            <SectionProject project={projectArray} />
-            <SectionLockup white p={projectEn.p2()} />
+            <SectionLockup white p={project.p2()} />                
+            <Form />
+            <Footer />           
           </Route>
         </Switch>
-        <Form />
-        <Footer />
-      </article>
-    </Router>
+      </Router>
+    </article>
   );
 }
 
