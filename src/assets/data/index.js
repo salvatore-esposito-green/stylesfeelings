@@ -211,7 +211,7 @@ export const project = {
   p2: () => { 
     return (
       <>       
-La progettazione delle nostre proposte nasce dallo studio del <i>concept</i> che il cliente vuole trasmettere: la definizione degli elementi fondamentali di ogni progetto. <br /><br />Lo scopo principale è di fornire le soluzioni <i>eleganti e raffinate</i> ma innovative e rispettose delle emozioni che si vuole trasmettere. <br/><br />
+La progettazione delle nostre proposte nasce dallo studio del <i>concept</i> che il cliente vuole trasmettere: la definizione degli elementi fondamentali di ogni progetto. <br /><br />Lo scopo principale è di fornire le soluzioni <i>eleganti e raffinate</i> ma innovative e rispettose delle emozioni che si vogliono trasmettere. <br/><br />
 La nostra esperienza internazionale ci contraddistingue in ogni nostro progetto.
       </> 
     )
@@ -235,9 +235,9 @@ export const conceptTextArray = [
     title: 'Secret Garden',
     p: () => {
       return (<>
-        Nel giardino segreto di Qvinto ogni cosa ti parlerà d'#amore.
+        Nel giardino segreto di Qvinto ogni cosa ti parlerà d'amore.
         <br/><br/>
-        Il #SecretGarden è la splendida location avvolta da una suggestiva cascata di fiori, dove poter gustare una una romantica cena di coppia o un'intima cena tra amici. Momenti 'intimi' da condividere con champagne, rose rosse e tanto amore.
+        Il Secret Garden è la splendida location avvolta da una suggestiva cascata di fiori, dove poter gustare una romantica cena di coppia o un'intima cena tra amici. Momenti 'intimi' da condividere con champagne, rose rosse e tanto amore.
       </> )
     },
     gallery: [
@@ -263,9 +263,9 @@ export const conceptTextArray = [
     title: 'Notting Hill',
     p: () => {
       return (<>        
-        "Can i stay for a while? You can stay forever."<br/><br/>
-        Un angolo di un magico guardino di Londra a Roma... a una porta da te.<br/>
-        Il nuovo dehor esterno di #Qvinto, in perfetto British Style, dove gustare tutte le prelibatezze degli Chef e i drink firmati dai bartender. Il #NottingHillGarden ti avvolgere grazie alla sua sugestiva bellezza e romanticismo.
+        "Can i stay for a while? (Julia Roberts)<br/>You can stay forever (Hugh Grant). "<br/><br/>
+        Un angolo di un magico giardino di Londra a Roma... a una porta da te.<br/>
+        Il nuovo dehor esterno di Qvinto, in perfetto British Style, dove gustare tutte le prelibatezze degli Chef e i drink firmati dai bartender. Il NottingHill Garden ti avvolgere grazie alla sua sugestiva bellezza e romanticismo.
       </> )
     },
     gallery: [      
@@ -292,7 +292,7 @@ export const conceptTextArray = [
     p: () => {
       return (<>       
        Vivi la tua esperienza spaziale. Allaccia le cinture e preparati al decollo.<br/><br/>
-        Un viaggio verso la tua #ExclusiveSpaceExperience sta per iniziare.
+        Il viaggio verso la tua Exclusive Space Experience sta per iniziare.
       </> )
     },
     gallery: [
@@ -361,7 +361,7 @@ export const conceptTextArray = [
     title: 'Igloo Garden',
     p: () => {
       return (<>
-      Come se foste in una baita a più di 2000 metri, gli Igloo sono la location 'calda' e ideale per vivere l'inverno nella Capitale.<br/><br/>
+      Come in una baita a più di 2000 metri, gli Igloo sono la location 'calda' e ideale per vivere l'inverno nella Capitale.<br/><br/>
       Eleganti e confortevoli, gli Igloo sono la cornice ideale dove gustare light lunch, aperitivi gourmet e sorseggiare il vero English Royal Tea.
       </> )
     },

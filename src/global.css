@@ -55,6 +55,12 @@ h2 span, h3 {
     background-clip: text;
     -webkit-text-fill-color: transparent; 
     color: transparent;
+    -webkit-box-decoration-break: clone;
+    background-image: -moz-linear-gradient(to right, white, white,white, #fec401,#ffd974,#c99000,#dca317, #c99000,#ffd974, #fec401, white, white, white );
+    background-image: -webkit-gradient(to right, white, white,white, #fec401,#ffd974,#c99000,#dca317, #c99000,#ffd974, #fec401, white, white, white );
+    background-image: -webkit-linear-gradient(to right, white, white,white, #fec401,#ffd974,#c99000,#dca317, #c99000,#ffd974, #fec401, white, white, white );
+    background-image: -o-linear-gradient(to right, white, white,white, #fec401,#ffd974,#c99000,#dca317, #c99000,#ffd974, #fec401, white, white, white );
+    background-image: -ms-linear-gradient(to right, white, white,white, #fec401,#ffd974,#c99000,#dca317, #c99000,#ffd974, #fec401, white, white, white );
     background-image: linear-gradient(to right, white, white,white, #fec401,#ffd974,#c99000,#dca317, #c99000,#ffd974, #fec401, white, white, white );
     background-size: 580%;
     background-position: 0%;
@@ -69,6 +75,12 @@ h3  {
     margin-bottom: 0;
     animation: rameAnimation 4s infinite 2s alternate-reverse;
     animation-timing-function: ease-in-out;
+    -webkit-box-decoration-break: clone;
+    background-image: -moz-linear-gradient(to right, black, black,black, #fec401,#ffd974,#c99000,#dca317, #c99000,#ffd974, #fec401, black, black, black );
+    background-image: -webkit-gradient(to right, black, black,black, #fec401,#ffd974,#c99000,#dca317, #c99000,#ffd974, #fec401, black, black, black );
+    background-image: -webkit-linear-gradient(to right, black, black,black, #fec401,#ffd974,#c99000,#dca317, #c99000,#ffd974, #fec401, black, black, black );
+    background-image: -o-linear-gradient(to right, black, black,black, #fec401,#ffd974,#c99000,#dca317, #c99000,#ffd974, #fec401, black, black, black );
+    background-image: -ms-linear-gradient(to right, black, black,black, #fec401,#ffd974,#c99000,#dca317, #c99000,#ffd974, #fec401, black, black, black );
     background-image: linear-gradient(to right, black, black,black, #fec401,#ffd974,#c99000,#dca317, #c99000,#ffd974, #fec401, black, black, black );
 }
 

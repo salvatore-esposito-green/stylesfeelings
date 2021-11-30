@@ -3,11 +3,29 @@ import css from './hero.module.sass'
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import logo from '../../assets/images/logo_w.svg'
-
+import en from '../../assets/images/en.png'
+import it from '../../assets/images/it.png'
+import {
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 import { slidehero } from '../../assets/data'
 export default function SectionHero() {
     return (
         <div className={css.hero}>
+             <Switch>
+                <Route exact path="/">
+                    <Link to={"/en"} className={css.lang}>
+                        <img src={en} alt="Eng" /><span>Eng</span>            
+                    </Link>
+                </Route>
+                <Route exact path="/en">
+                    <Link to={"/"} className={css.lang}>
+                        <img src={it} alt="Ita" /><span>Ita</span>
+                    </Link>
+                </Route>
+            </Switch>
             {/*  <VideoComponent /> */}
             <Fade
                 duration={1000}
